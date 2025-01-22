@@ -1,0 +1,4 @@
+repository "Metaverse-Assignment-1@sebha01@cloud"
+  path "/"
+    br "/main"
+    co "/main"
