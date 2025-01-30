@@ -513,6 +513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80187ddbd7925fa4d9cf70ff5d1afe0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PokeAttachPoint: {fileID: 7072478885644867269}
 --- !u!1 &7072478885645355745
 GameObject:
   m_ObjectHideFlags: 0
