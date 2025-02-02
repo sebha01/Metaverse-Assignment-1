@@ -3147,6 +3147,7 @@ GameObject:
   - component: {fileID: 1184093121}
   - component: {fileID: 1184093122}
   - component: {fileID: 1184093124}
+  - component: {fileID: 1184093125}
   m_Layer: 0
   m_Name: Right Controller
   m_TagString: Untagged
@@ -3437,6 +3438,31 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.08
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1184093125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184093120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a50d88b55b45648927679791f472de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_GroupName: 
+  m_InteractionManager: {fileID: 2075682080}
+  m_StartingGroupMembers:
+  - {fileID: 1109598491}
+  - {fileID: 388075568}
+  - {fileID: 1935499012}
+  m_StartingInteractionOverridesMap:
+  - groupMember: {fileID: 1935499012}
+    overrideGroupMembers:
+    - {fileID: 1109598491}
+  - groupMember: {fileID: 1109598491}
+    overrideGroupMembers:
+    - {fileID: 388075568}
 --- !u!1 &1198719535
 GameObject:
   m_ObjectHideFlags: 0
@@ -4036,6 +4062,7 @@ GameObject:
   - component: {fileID: 2110698503}
   - component: {fileID: 2110698504}
   - component: {fileID: 2110698506}
+  - component: {fileID: 2110698507}
   m_Layer: 0
   m_Name: Left Controller
   m_TagString: Untagged
@@ -4326,6 +4353,31 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.08
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2110698507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110698502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a50d88b55b45648927679791f472de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_GroupName: Left
+  m_InteractionManager: {fileID: 2075682080}
+  m_StartingGroupMembers:
+  - {fileID: 181051280}
+  - {fileID: 736561037}
+  - {fileID: 1198719537}
+  m_StartingInteractionOverridesMap:
+  - groupMember: {fileID: 1198719537}
+    overrideGroupMembers:
+    - {fileID: 181051280}
+  - groupMember: {fileID: 181051280}
+    overrideGroupMembers:
+    - {fileID: 736561037}
 --- !u!1 &2133533676
 GameObject:
   m_ObjectHideFlags: 0
