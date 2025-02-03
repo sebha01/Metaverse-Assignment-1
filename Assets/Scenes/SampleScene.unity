@@ -122,6 +122,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &71022370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71022371}
+  m_Layer: 0
+  m_Name: Attach Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &71022371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71022370}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0.7071068, z: 0, w: 0}
+  m_LocalPosition: {x: 0.0668, y: 0, z: 0.0096}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1559336582}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 90}
 --- !u!1 &78765397
 GameObject:
   m_ObjectHideFlags: 0
@@ -4498,6 +4529,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1472478648}
+    - targetCorrespondingSourceObject: {fileID: -8521642780980307617, guid: e9e7b0fa6d9ed504a9ad376d9c62ecd6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 71022371}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7880506382239382463, guid: e9e7b0fa6d9ed504a9ad376d9c62ecd6,
         type: 3}
@@ -4519,6 +4554,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1559336585}
+    - targetCorrespondingSourceObject: {fileID: 3571069854166855660, guid: e9e7b0fa6d9ed504a9ad376d9c62ecd6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1559336591}
   m_SourcePrefab: {fileID: 100100000, guid: e9e7b0fa6d9ed504a9ad376d9c62ecd6, type: 3}
 --- !u!4 &1559336580 stripped
 Transform:
@@ -4911,6 +4950,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1559336591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559336583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88086e125c9c31840806bd336c1177a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerOfMass: {x: 0.41, y: 0, z: 0.02}
 --- !u!114 &1559336593
 MonoBehaviour:
   m_ObjectHideFlags: 0
