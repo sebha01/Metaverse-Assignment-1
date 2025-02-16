@@ -8725,6 +8725,10 @@ MonoBehaviour:
   ejectPower: 250
   source: {fileID: 2136280852}
   fireSound: {fileID: 8300000, guid: 551dc6491b380b248b64492603df9b01, type: 3}
+  reloadSound: {fileID: 8300000, guid: c9cac093b5c32734b94e280c0e2a08aa, type: 3}
+  noAmmoSound: {fileID: 8300000, guid: 9dc3b59d65074e24690110c95e279063, type: 3}
+  magazine: {fileID: 0}
+  socketInteractor: {fileID: 0}
 --- !u!95 &4552356143531596363
 Animator:
   serializedVersion: 5
