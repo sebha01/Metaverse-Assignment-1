@@ -54,7 +54,7 @@ public class SimpleShoot : MonoBehaviour
             gunAnimator = GetComponentInChildren<Animator>();
 
         socketInteractor.onSelectEntered.AddListener(AddMagazine);
-        socketInteractor.onSelectExit.AddListener(RemoveMagazine);
+        socketInteractor.onSelectExited.AddListener(RemoveMagazine);
     }
 
     public void PullTheTrigger()
