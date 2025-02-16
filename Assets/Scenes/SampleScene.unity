@@ -8727,8 +8727,8 @@ MonoBehaviour:
   fireSound: {fileID: 8300000, guid: 551dc6491b380b248b64492603df9b01, type: 3}
   reloadSound: {fileID: 8300000, guid: c9cac093b5c32734b94e280c0e2a08aa, type: 3}
   noAmmoSound: {fileID: 8300000, guid: 9dc3b59d65074e24690110c95e279063, type: 3}
-  magazine: {fileID: 0}
-  socketInteractor: {fileID: 0}
+  magazine: {fileID: 7371364280509964476}
+  socketInteractor: {fileID: 1984063672}
 --- !u!95 &4552356143531596363
 Animator:
   serializedVersion: 5
@@ -9254,7 +9254,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -9601,7 +9601,7 @@ MeshCollider:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 1
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
