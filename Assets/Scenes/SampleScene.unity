@@ -6755,11 +6755,11 @@ Transform:
   - {fileID: 931592111}
   - {fileID: 1559336580}
   - {fileID: 2872250911274497449}
-  - {fileID: 7371364280509964473}
   - {fileID: 1355675781}
   - {fileID: 1961362507}
   - {fileID: 1275250493}
   - {fileID: 1004899594}
+  - {fileID: 7371364280509964473}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1739491758
@@ -7563,7 +7563,7 @@ MonoBehaviour:
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
-  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingSelectedInteractable: {fileID: 7371364280509964474}
   m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
@@ -9632,8 +9632,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7370018896124820639}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.055478968, y: -0.055478968, z: -0.704927, w: 0.704927}
-  m_LocalPosition: {x: -2.0171, y: 0.84499997, z: 0.2697}
+  m_LocalRotation: {x: 0.055478964, y: -0.055478964, z: -0.704927, w: 0.704927}
+  m_LocalPosition: {x: -2.035, y: 0.84499997, z: 0.3829999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
