@@ -6,10 +6,13 @@ using EzySlice;
 
 public class SliceObject : MonoBehaviour
 {
-    public Transform planeDebug;
-    public GameObject target;
+    public Transform startSlicePoint;
+    public Transform endSlicePoint;
+    public VelocityEstimator velocityEstimator;
+    public LayerMask sliceableLayer;
+
     public Material crossSectionMaterial;
-    public float cutForce = 2000;
+    public float cutForce = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -18,17 +21,24 @@ public class SliceObject : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
+        bool hasHit = Physics.Linecast(startSlicePoint.position, endSlicePoint.position, out RaycastHit hit, sliceableLayer);
+
+        if (hasHit)
+        { 
+            GameObject target = hit.transform.gameObject;
             Slice(target);
         }
     }
 
     public void Slice(GameObject target)
     {
-        SlicedHull hull = target.Slice(planeDebug.position, planeDebug.up);
+        Vector3 velocity = velocityEstimator.GetVelocityEstimate();
+        Vector3 planeNormal = Vector3.Cross(endSlicePoint.position - startSlicePoint.position, velocity);
+        planeNormal.Normalize();
+
+        SlicedHull hull = target.Slice(endSlicePoint.position, planeNormal);
 
         if (hull != null)
         {

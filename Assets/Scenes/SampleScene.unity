@@ -4444,13 +4444,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940095941}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.5427043, w: 0.83992386}
   m_LocalPosition: {x: 0.8, y: 1.31, z: -6.64}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 65.736}
 --- !u!1 &1024957464
 GameObject:
   m_ObjectHideFlags: 0
@@ -6875,6 +6875,7 @@ MonoBehaviour:
   target: {fileID: 1520248331}
   crossSectionMaterial: {fileID: 2100000, guid: 45ad3a2745cb2f646ac3dd0255241e2a,
     type: 2}
+  cutForce: 2000
 --- !u!1 &1591846991
 GameObject:
   m_ObjectHideFlags: 0
