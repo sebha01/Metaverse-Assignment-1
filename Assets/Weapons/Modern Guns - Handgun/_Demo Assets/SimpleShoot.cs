@@ -28,13 +28,16 @@ public class SimpleShoot : MonoBehaviour
     public Magazine magazine;
     public XRBaseInteractor socketInteractor;
 
-    public void AddMagazine(XRBaseInteractable interactable)
+    public void AddMagazine(SelectEnterEventArgs args)
     {
-        magazine = interactable.GetComponent<Magazine>();
-        source.PlayOneShot(reloadSound);
+        if (args.interactableObject != null)
+        {
+            magazine = args.interactableObject.transform.GetComponent<Magazine>();
+            source.PlayOneShot(reloadSound);
+        }
     }
 
-    public void RemoveMagazine(XRBaseInteractable interactable)
+    public void RemoveMagazine(SelectExitEventArgs args)
     {
         magazine = null;
         source.PlayOneShot(reloadSound);
@@ -53,8 +56,8 @@ public class SimpleShoot : MonoBehaviour
         if (gunAnimator == null)
             gunAnimator = GetComponentInChildren<Animator>();
 
-        socketInteractor.onSelectEntered.AddListener(AddMagazine);
-        socketInteractor.onSelectExited.AddListener(RemoveMagazine);
+        socketInteractor.selectEntered.AddListener(AddMagazine);
+        socketInteractor.selectExited.AddListener(RemoveMagazine);
     }
 
     public void PullTheTrigger()
