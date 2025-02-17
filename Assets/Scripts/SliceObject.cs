@@ -12,7 +12,7 @@ public class SliceObject : MonoBehaviour
     public LayerMask sliceableLayer;
 
     public Material crossSectionMaterial;
-    public float cutForce = 100;
+    public float cutForce = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +57,7 @@ public class SliceObject : MonoBehaviour
         Rigidbody rb = slicedObject.AddComponent<Rigidbody>();
         MeshCollider collider = slicedObject.AddComponent<MeshCollider>();
         collider.convex = true;
+        slicedObject.layer = 6;
         rb.AddExplosionForce(cutForce, slicedObject.transform.position, 1);
     }
 }
