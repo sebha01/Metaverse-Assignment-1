@@ -8,6 +8,7 @@ public class SliceObject : MonoBehaviour
 {
     public Transform planeDebug;
     public GameObject target;
+    public Material crossSectionMaterial;
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +31,10 @@ public class SliceObject : MonoBehaviour
 
         if (hull != null)
         {
-            GameObject upperHull = hull.CreateUpperHull(target);
-            GameObject lowerHull = hull.CreateLowerHull(target);
+            GameObject upperHull = hull.CreateUpperHull(target, crossSectionMaterial);
+            GameObject lowerHull = hull.CreateLowerHull(target, crossSectionMaterial);
+
+            Destroy(target);
         }
     }
 }
