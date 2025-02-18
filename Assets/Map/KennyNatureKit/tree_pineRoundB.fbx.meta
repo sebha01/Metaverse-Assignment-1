@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: f36c4a3ad6b487441bc05904724723ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: leafsDark
     second: {fileID: 2100000, guid: f36c4a3ad6b487441bc05904724723ac, type: 2}
   - first:
