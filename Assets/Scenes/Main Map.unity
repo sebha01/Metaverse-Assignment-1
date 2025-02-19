@@ -2052,13 +2052,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245816312}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.15736444, y: 0.00000002235174, z: -0, w: 0.98754066}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.0581, z: 0.0414}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1073391851}
-  m_LocalEulerAnglesHint: {x: -18.108, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &250766181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4183,6 +4183,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: 'Weapon '
       objectReference: {fileID: 0}
+    - target: {fileID: 7880506382239382463, guid: e9e7b0fa6d9ed504a9ad376d9c62ecd6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4303,7 +4308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1705939344}
   m_Colliders:
   - {fileID: 1373687105}
   m_InteractionLayerMask:
@@ -4517,7 +4522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1705939344}
   m_Colliders:
   - {fileID: 381066926}
   - {fileID: 1563421887}
@@ -5405,7 +5410,7 @@ Transform:
   m_GameObject: {fileID: 692723925}
   serializedVersion: 2
   m_LocalRotation: {x: 0.078459114, y: -0, z: -0, w: 0.99691737}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.0316, z: -0.005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8382,7 +8387,7 @@ GameObject:
   - component: {fileID: 1073391852}
   m_Layer: 3
   m_Name: M1911 Handgun_Silver (Shooting)
-  m_TagString: Untagged
+  m_TagString: 'Weapon '
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8419,7 +8424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1705939344}
   m_Colliders:
   - {fileID: 376414068}
   - {fileID: 881313629}
@@ -8428,7 +8433,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 2
-  m_DistanceCalculationMode: 1
+  m_DistanceCalculationMode: 0
   m_SelectMode: 0
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
@@ -12596,7 +12601,7 @@ GameObject:
   - component: {fileID: 1563421887}
   m_Layer: 0
   m_Name: Blade
-  m_TagString: Untagged
+  m_TagString: 'Weapon '
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14763,14 +14768,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812360432}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.1293396, y: -0.2364969, z: -0.69517714, w: 0.66638523}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.055478893, y: -0.055478893, z: -0.704927, w: 0.704927}
+  m_LocalPosition: {x: -0.03160006, y: 0, z: -0.0050000316}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 116979542}
   m_Father: {fileID: 1203224988}
-  m_LocalEulerAnglesHint: {x: -30.079, y: -9, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: -9, z: -90}
 --- !u!1 &1826147900
 GameObject:
   m_ObjectHideFlags: 0
@@ -14784,7 +14789,6 @@ GameObject:
   - component: {fileID: 1826147904}
   - component: {fileID: 1826147903}
   - component: {fileID: 1826147902}
-  - component: {fileID: 1826147906}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -14894,29 +14898,6 @@ MonoBehaviour:
   m_CameraFloorOffsetObject: {fileID: 297629605}
   m_RequestedTrackingOriginMode: 0
   m_CameraYOffset: 1.1176
---- !u!136 &1826147906
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1826147900}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.2
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &1851313066
 PrefabInstance:
   m_ObjectHideFlags: 0

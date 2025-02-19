@@ -32,4 +32,12 @@ public class Limb : MonoBehaviour
         transform.localScale = Vector3.zero;
         Destroy(this);
     }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.CompareTag("Weapon"))
+        {
+            GetHit();
+        }
+    }
 }

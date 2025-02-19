@@ -96,10 +96,7 @@ public class SimpleShoot : MonoBehaviour
 
         bulletPrefab.tag = "Weapon";
 
-        // Create a bullet and add force on it in direction of the barrel
-        Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
-
-        //Code to trigger the start of the dismemberment
+        //Code to trigger the start of the dismember
         RaycastHit hit;
 
         if (Physics.Raycast(barrelLocation.position, barrelLocation.forward, out hit, Mathf.Infinity))
@@ -108,6 +105,8 @@ public class SimpleShoot : MonoBehaviour
             limb.GetHit();
         }
 
+        // Create a bullet and add force on it in direction of the barrel
+        Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
     }
 
     //This function creates a casing at the ejection slot
