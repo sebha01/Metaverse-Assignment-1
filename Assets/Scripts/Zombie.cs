@@ -4,19 +4,13 @@ using UnityEngine;
 
 public class Zombie : MonoBehaviour
 {
-    public int health = 100;
-    public int maxHealth = 100;
+    public float _currentHealth;
+    [SerializeField] private float _maxHealth = 100;
     public GameObject target;
 
-    private enum ZombieState
-    {
-        Walking,
-        Attacking,
-        Ragdoll
-    }
+    [SerializeField] private HealthBar _healthbar;
 
     private Rigidbody[] _ragdollRigidBodies;
-    private ZombieState _currentState = ZombieState.Walking;
 
     // Start is called before the first frame update
     void Awake()
@@ -25,20 +19,29 @@ public class Zombie : MonoBehaviour
         DisableRagdoll(); 
     }
 
+    private void Start()
+    {
+        _currentHealth = _maxHealth;
+        _healthbar.UpdateHealthBar(_maxHealth, _currentHealth);
+    }
+
     // Update is called once per frame
     void Update()
     {
-        switch (_currentState)
+        if (_currentHealth <= 0)
         {
-            case ZombieState.Walking:
-                WalkingBehaviour();
-                break;
-            case ZombieState.Attacking:
-                AttackingBehaviour();
-                break;
-            case ZombieState.Ragdoll:
-                RagDollBehaviour();
-                break;
+            _currentHealth = 0;
+            RagDollBehaviour();
+        }
+        else
+        {
+            //Code for distance to player
+            //if far from player
+            //Walk Behaviour
+            //eles if close
+            //attack Behaviour
+
+            _healthbar.UpdateHealthBar(_maxHealth, _currentHealth);
         }
     }
 

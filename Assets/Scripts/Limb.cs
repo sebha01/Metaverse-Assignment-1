@@ -24,14 +24,15 @@ public class Limb : MonoBehaviour
             {
                 if (limb != null)
                 {
-                    limb.GetHit();
+                    transform.localScale = Vector3.zero;
+                    Destroy(this);
                 }
             }
         }
 
         transform.localScale = Vector3.zero;
 
-        zombie.health -= 30;
+        zombie._currentHealth -= 30;
 
         Destroy(this);
     }

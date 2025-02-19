@@ -101,8 +101,13 @@ public class SimpleShoot : MonoBehaviour
 
         if (Physics.Raycast(barrelLocation.position, barrelLocation.forward, out hit, Mathf.Infinity))
         {
-            hit.transform.GetComponent<Limb>().GetHit();
-        }
+            Limb limb = hit.transform.GetComponent<Limb>();
+
+            if (limb != null)
+            {
+                limb.GetHit();
+            }
+        } 
 
         // Create a bullet and add force on it in direction of the barrel
         Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
