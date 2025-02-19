@@ -14,16 +14,16 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.22514059, g: 0.3886792, b: 0.37208897, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.13163048, g: 0.21911082, b: 0.3207547, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.04
   m_LinearFogStart: 0
-  m_LinearFogEnd: 300
+  m_LinearFogEnd: 300.01
   m_AmbientSkyColor: {r: 0.14131004, g: 0.18279374, b: 0.335849, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 2.23
+  m_AmbientIntensity: 1.42
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: aa78c8d403a8547fe86d1f74239e6b03, type: 2}
@@ -33,9 +33,9 @@ RenderSettings:
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 128
+  m_DefaultReflectionResolution: 2048
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 0.65
+  m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_UseRadianceAmbientProbe: 0
@@ -3002,6 +3002,119 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7788291588132379583, guid: 3f75075f4d837bc40b69d489f65cea19, type: 3}
+--- !u!1001 &489418725
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -986
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1202
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1687
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_Name
+      value: Moon
+      objectReference: {fileID: 0}
+    - target: {fileID: 5420770332018443179, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7710059
+      objectReference: {fileID: 0}
+    - target: {fileID: 5420770332018443179, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.46046308
+      objectReference: {fileID: 0}
+    - target: {fileID: 5420770332018443179, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0027973503
+      objectReference: {fileID: 0}
+    - target: {fileID: 5420770332018443179, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.43990433
+      objectReference: {fileID: 0}
+    - target: {fileID: 5420770332018443179, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 45.439
+      objectReference: {fileID: 0}
+    - target: {fileID: 5420770332018443179, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 34.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 5420770332018443179, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 74.381
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550375736058754136, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550375736058754136, guid: 42372e7cdc3841f4c8560f6f0183a46c,
+        type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42372e7cdc3841f4c8560f6f0183a46c, type: 3}
 --- !u!1 &615940050
 GameObject:
   m_ObjectHideFlags: 0
@@ -8389,7 +8502,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -9821,3 +9934,4 @@ SceneRoots:
   - {fileID: 1342413737}
   - {fileID: 992170013}
   - {fileID: 762702883}
+  - {fileID: 489418725}
