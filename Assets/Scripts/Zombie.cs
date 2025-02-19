@@ -5,8 +5,8 @@ using UnityEngine;
 public class Zombie : MonoBehaviour
 {
     public int health = 100;
+    public int maxHealth = 100;
     public GameObject target;
-    public EnemyHealthBarController enemyHealthBarController;
 
     private enum ZombieState
     {
@@ -22,7 +22,7 @@ public class Zombie : MonoBehaviour
     void Awake()
     {
         _ragdollRigidBodies = GetComponentsInChildren<Rigidbody>();
-        DisableRagdoll();
+        DisableRagdoll(); 
     }
 
     // Update is called once per frame

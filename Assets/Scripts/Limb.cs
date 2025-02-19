@@ -5,6 +5,7 @@ using UnityEngine;
 public class Limb : MonoBehaviour
 {
     [SerializeField] Limb[] childLimbs;
+    public Zombie zombie;
 
     private void Start()
     {
@@ -29,6 +30,9 @@ public class Limb : MonoBehaviour
         }
 
         transform.localScale = Vector3.zero;
+
+        zombie.health -= 30;
+
         Destroy(this);
     }
 
