@@ -8,7 +8,6 @@ public class Limb : MonoBehaviour
 
     private void Start()
     {
-        
     }
 
     private void Update()
@@ -35,17 +34,11 @@ public class Limb : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.CompareTag("Weapon"))
-        {
-            GetHit();
-        }
+        GetHit();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.CompareTag("Weapon"))
-        {
-            GetHit();
-        }
+        GetHit();
     }
 }

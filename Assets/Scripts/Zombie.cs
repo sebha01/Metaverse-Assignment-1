@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Zombie : MonoBehaviour
 {
-    public AttributeManager attribMgr;
+    public int health = 100;
     public GameObject target;
+    public EnemyHealthBarController enemyHealthBarController;
 
     private enum ZombieState
     {
@@ -22,7 +23,6 @@ public class Zombie : MonoBehaviour
     {
         _ragdollRigidBodies = GetComponentsInChildren<Rigidbody>();
         DisableRagdoll();
-        attribMgr = GetComponent<AttributeManager>();
     }
 
     // Update is called once per frame
@@ -60,24 +60,16 @@ public class Zombie : MonoBehaviour
 
     private void WalkingBehaviour()
     {
-        CheckHealth();
+        
     }
 
     private void AttackingBehaviour()
     {
-        CheckHealth();
+        
     }
 
     private void RagDollBehaviour()
     {
         EnableRagdoll();
-    }
-
-    private void CheckHealth()
-    {
-        if (attribMgr.health <= 0)
-        {
-            _currentState = ZombieState.Ragdoll;
-        }
     }
 }

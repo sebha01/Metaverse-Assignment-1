@@ -6244,7 +6244,6 @@ GameObject:
   - component: {fileID: 863484539}
   - component: {fileID: 863484538}
   - component: {fileID: 863484537}
-  - component: {fileID: 863484540}
   m_Layer: 0
   m_Name: EnemyHealthBar
   m_TagString: Untagged
@@ -6329,25 +6328,12 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &863484540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863484535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fa0704bbf45bc14e8df34baf58e4ccb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameratToLookAt: {fileID: 1972205984}
 --- !u!1 &871580641
 GameObject:
   m_ObjectHideFlags: 0
@@ -7612,10 +7598,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 863484536}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d6f77038cd2fa9a4dbf3ec5e658f6277,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2009487244}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d6f77038cd2fa9a4dbf3ec5e658f6277,
         type: 3}
       insertIndex: -1
@@ -12370,6 +12352,7 @@ GameObject:
   - component: {fileID: 1452625226}
   - component: {fileID: 1452625228}
   - component: {fileID: 1452625227}
+  - component: {fileID: 1452625229}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -12432,6 +12415,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452625225}
   m_CullTransparentMesh: 1
+--- !u!114 &1452625229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452625225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cefd9e8c77f1d14ca68f0176b99f652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 205704353}
+  health: 100
+  startHealth: 100
 --- !u!1 &1467389064 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -931750839699774740, guid: d6f77038cd2fa9a4dbf3ec5e658f6277,
@@ -17238,20 +17236,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 976409746}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2009487244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2009487240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e951e7d2a3db5b4fb2868049b56a22b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  damage: 0
 --- !u!114 &2009487245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17264,8 +17248,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62417e3371a63fd4ba62e262b6c83312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attribMgr: {fileID: 0}
-  target: {fileID: 0}
+  health: 100
+  target: {fileID: 1826147900}
+  enemyHealthBarController: {fileID: 0}
 --- !u!4 &2009487247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d6f77038cd2fa9a4dbf3ec5e658f6277,

@@ -94,17 +94,14 @@ public class SimpleShoot : MonoBehaviour
         if (!bulletPrefab)
         { return; }
 
-        bulletPrefab.tag = "Weapon";
+        //bulletPrefab.tag = "Weapon";
 
         //Code to trigger the start of the dismember
         RaycastHit hit;
 
         if (Physics.Raycast(barrelLocation.position, barrelLocation.forward, out hit, Mathf.Infinity))
         {
-            Limb limb = hit.transform.GetComponent<Limb>();
-            limb.GetHit();
-            Zombie zombie = limb.GetComponentInParent<Zombie>();
-            zombie.attribMgr.health -= 30;
+            hit.transform.GetComponent<Limb>().GetHit();
         }
 
         // Create a bullet and add force on it in direction of the barrel
