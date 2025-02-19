@@ -6546,6 +6546,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2761784063978902503, guid: c1800acf6366418a9b5f610249000331,
         type: 3}
+      propertyPath: m_Velocity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761784063978902503, guid: c1800acf6366418a9b5f610249000331,
+        type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1705939344}
