@@ -103,6 +103,8 @@ public class SimpleShoot : MonoBehaviour
         {
             Limb limb = hit.transform.GetComponent<Limb>();
             limb.GetHit();
+            Zombie zombie = limb.GetComponentInParent<Zombie>();
+            zombie.attribMgr.health -= 30;
         }
 
         // Create a bullet and add force on it in direction of the barrel

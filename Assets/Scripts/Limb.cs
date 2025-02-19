@@ -40,4 +40,12 @@ public class Limb : MonoBehaviour
             GetHit();
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.CompareTag("Weapon"))
+        {
+            GetHit();
+        }
+    }
 }

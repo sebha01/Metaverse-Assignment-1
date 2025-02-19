@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Zombie : MonoBehaviour
 {
+    public AttributeManager attribMgr;
+    public GameObject target;
+
     private enum ZombieState
     {
-        Tpose,
         Walking,
         Attacking,
         Ragdoll
@@ -20,6 +22,7 @@ public class Zombie : MonoBehaviour
     {
         _ragdollRigidBodies = GetComponentsInChildren<Rigidbody>();
         DisableRagdoll();
+        attribMgr = GetComponent<AttributeManager>();
     }
 
     // Update is called once per frame
@@ -29,9 +32,6 @@ public class Zombie : MonoBehaviour
         {
             case ZombieState.Walking:
                 WalkingBehaviour();
-                break;
-            case ZombieState.Tpose:
-                TPoseBehaviour();
                 break;
             case ZombieState.Attacking:
                 AttackingBehaviour();
@@ -58,27 +58,26 @@ public class Zombie : MonoBehaviour
         }
     }
 
-    private void TPoseBehaviour()
-    {
-        
-    }
-
     private void WalkingBehaviour()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            EnableRagdoll();
-            _currentState = ZombieState.Ragdoll;
-        }
+        CheckHealth();
     }
 
     private void AttackingBehaviour()
     {
-
+        CheckHealth();
     }
 
     private void RagDollBehaviour()
     {
+        EnableRagdoll();
+    }
 
+    private void CheckHealth()
+    {
+        if (attribMgr.health <= 0)
+        {
+            _currentState = ZombieState.Ragdoll;
+        }
     }
 }
