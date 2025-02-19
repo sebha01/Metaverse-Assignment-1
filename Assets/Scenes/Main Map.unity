@@ -3046,8 +3046,8 @@ CharacterJoint:
     limit: 0
     bounciness: 0
     contactDistance: 0
-  m_EnableProjection: 0
-  m_ProjectionDistance: 0.1
+  m_EnableProjection: 1
+  m_ProjectionDistance: 0
   m_ProjectionAngle: 180
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -3607,8 +3607,8 @@ CharacterJoint:
     limit: 0
     bounciness: 0
     contactDistance: 0
-  m_EnableProjection: 0
-  m_ProjectionDistance: 0.1
+  m_EnableProjection: 1
+  m_ProjectionDistance: 0
   m_ProjectionAngle: 180
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -4321,8 +4321,8 @@ CharacterJoint:
     limit: 0
     bounciness: 0
     contactDistance: 0
-  m_EnableProjection: 0
-  m_ProjectionDistance: 0.1
+  m_EnableProjection: 1
+  m_ProjectionDistance: 0
   m_ProjectionAngle: 180
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -5117,8 +5117,8 @@ CharacterJoint:
     limit: 0
     bounciness: 0
     contactDistance: 0
-  m_EnableProjection: 0
-  m_ProjectionDistance: 0.1
+  m_EnableProjection: 1
+  m_ProjectionDistance: 0
   m_ProjectionAngle: 180
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -5666,8 +5666,8 @@ CharacterJoint:
     limit: 0
     bounciness: 0
     contactDistance: 0
-  m_EnableProjection: 0
-  m_ProjectionDistance: 0.1
+  m_EnableProjection: 1
+  m_ProjectionDistance: 0
   m_ProjectionAngle: 180
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -6220,8 +6220,8 @@ CharacterJoint:
     limit: 0
     bounciness: 0
     contactDistance: 0
-  m_EnableProjection: 0
-  m_ProjectionDistance: 0.1
+  m_EnableProjection: 1
+  m_ProjectionDistance: 0
   m_ProjectionAngle: 180
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -7011,8 +7011,8 @@ CharacterJoint:
     limit: 0
     bounciness: 0
     contactDistance: 0
-  m_EnableProjection: 0
-  m_ProjectionDistance: 0.1
+  m_EnableProjection: 1
+  m_ProjectionDistance: 0
   m_ProjectionAngle: 180
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -7218,8 +7218,8 @@ CharacterJoint:
     limit: 0
     bounciness: 0
     contactDistance: 0
-  m_EnableProjection: 0
-  m_ProjectionDistance: 0.1
+  m_EnableProjection: 1
+  m_ProjectionDistance: 0
   m_ProjectionAngle: 180
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -7347,8 +7347,8 @@ CharacterJoint:
     limit: 0
     bounciness: 0
     contactDistance: 0
-  m_EnableProjection: 0
-  m_ProjectionDistance: 0.1
+  m_EnableProjection: 1
+  m_ProjectionDistance: 0
   m_ProjectionAngle: 180
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -9775,7 +9775,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00003745611, y: -0.011343138, z: -0.00022489112}
+  m_ConnectedAnchor: {x: -33.720963, y: 2.9512463, z: -36.814472}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -9800,8 +9800,8 @@ CharacterJoint:
     limit: 0
     bounciness: 0
     contactDistance: 0
-  m_EnableProjection: 0
-  m_ProjectionDistance: 0.1
+  m_EnableProjection: 1
+  m_ProjectionDistance: 0
   m_ProjectionAngle: 180
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
