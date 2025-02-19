@@ -6,17 +6,39 @@ using UnityEngine.AI;
 public class NavigationScript : MonoBehaviour
 {
     public Transform player;
+    public float AttackDistance;
+
     private NavMeshAgent agent;
+    private Animator animator;
+    private float distanceToTarget;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        agent.destination = player.position;
+        //agent.destination = player.transform.position;
+
+        distanceToTarget = Vector3.Distance(agent.transform.position, player.position);
+
+        if (distanceToTarget < AttackDistance)
+        {
+            agent.isStopped = true;
+            animator.SetBool("CanAttack", true);
+        }
+        else
+        {
+            agent.isStopped = false;
+            animator.SetBool("CanAttack", false);
+            agent.destination = player.position;
+        }
+
+        agent.height = 0.5f;
+        agent.baseOffset = 0;
     }
 }

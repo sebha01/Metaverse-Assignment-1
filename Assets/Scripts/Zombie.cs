@@ -7,7 +7,6 @@ public class Zombie : MonoBehaviour
     public float _currentHealth;
     [SerializeField] private float _maxHealth = 100;
     [SerializeField] private Animator animator;
-    public GameObject target;
 
     [SerializeField] private HealthBar _healthbar;
 
@@ -38,12 +37,6 @@ public class Zombie : MonoBehaviour
         else
         {
             _healthbar.UpdateHealthBar(_maxHealth, _currentHealth);
-
-            //Code for distance to player
-            //if far from player
-            //Walk Behaviour
-            //eles if close
-            //attack Behaviour
         }
     }
 
@@ -65,15 +58,5 @@ public class Zombie : MonoBehaviour
         {
             rigidbody.isKinematic = false;
         }
-    }
-
-    private void WalkingBehaviour()
-    {
-        
-    }
-
-    private void AttackingBehaviour()
-    {
-        
     }
 }
