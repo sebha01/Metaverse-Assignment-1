@@ -11,9 +11,9 @@ public class Limb : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Weapon")
+        if (collision.gameObject.CompareTag("Weapon"))
         {
-            Hit();
+
         }
     }
 }

@@ -3648,11 +3648,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Katana
       objectReference: {fileID: 0}
-    - target: {fileID: 7880506382239382463, guid: e9e7b0fa6d9ed504a9ad376d9c62ecd6,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4205,7 +4200,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0000000049912723, y: 0.0047077592, z: 0.000000005413306}
+  m_ConnectedAnchor: {x: 0.000000015526785, y: 0.00470774, z: -0.0000000022118885}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -4766,7 +4761,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0033276218, y: -0.007956738, z: -0.00014636945}
+  m_ConnectedAnchor: {x: -0.0033276025, y: -0.007956736, z: -0.00014639832}
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -5629,7 +5624,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000004646249, y: 0.0032195086, z: 0.000000006637877}
+  m_ConnectedAnchor: {x: 0.000004624605, y: 0.0032195104, z: 0.000000025700889}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -5841,25 +5836,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -2049929814205202405, guid: d6f77038cd2fa9a4dbf3ec5e658f6277,
-        type: 3}
-      propertyPath: m_RootBone
-      value: 
-      objectReference: {fileID: 1497129545}
     - target: {fileID: 919132149155446097, guid: d6f77038cd2fa9a4dbf3ec5e658f6277,
         type: 3}
       propertyPath: m_Name
       value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866666021909216657, guid: d6f77038cd2fa9a4dbf3ec5e658f6277,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866666021909216657, guid: d6f77038cd2fa9a4dbf3ec5e658f6277,
-        type: 3}
-      propertyPath: m_WarningMessage
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6321,7 +6301,7 @@ GameObject:
   - component: {fileID: 1073391852}
   m_Layer: 3
   m_Name: M1911 Handgun_Silver (Shooting)
-  m_TagString: Weapon
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6794,7 +6774,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0020152917, y: 0.00058463047, z: 0.0000000049997104}
+  m_ConnectedAnchor: {x: -0.002015326, y: 0.00058463245, z: 0.00000002408546}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -7343,7 +7323,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.002015292, y: 0.0005846304, z: 0.000000004862504}
+  m_ConnectedAnchor: {x: 0.0020152675, y: 0.00058463233, z: 0.000000024182905}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -7931,7 +7911,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.1549953e-10, y: 0.0052617462, z: 0.0000000039444767}
+  m_ConnectedAnchor: {x: -0.000000013561645, y: 0.005261747, z: -0.00000002197975}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -8775,7 +8755,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 7.3124334e-10, y: 0.0052617434, z: 0.000000001274203}
+  m_ConnectedAnchor: {x: -0.0000000058590417, y: 0.0052617434, z: 0.000000017723336}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
@@ -8982,7 +8962,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000000016298136, y: 0.0047077546, z: 2.3282905e-10}
+  m_ConnectedAnchor: {x: 0, y: 0.0047077215, z: 0.000000008149017}
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -9111,7 +9091,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0033828418, y: -0.007937369, z: -0.00014513079}
+  m_ConnectedAnchor: {x: 0.0033828053, y: -0.007937368, z: -0.00014515035}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -9347,12 +9327,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1491388680}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1497129545 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -2198888584636164399, guid: d6f77038cd2fa9a4dbf3ec5e658f6277,
-    type: 3}
-  m_PrefabInstance: {fileID: 976409746}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1501284040
 GameObject:
   m_ObjectHideFlags: 0
@@ -9448,7 +9422,7 @@ GameObject:
   - component: {fileID: 1563421887}
   m_Layer: 0
   m_Name: Blade
-  m_TagString: Weapon
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12332,7 +12306,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000037426897, y: -0.011343139, z: -0.00022487156}
+  m_ConnectedAnchor: {x: -33.720963, y: 2.9512463, z: -36.814472}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
