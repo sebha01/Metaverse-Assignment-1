@@ -1668,7 +1668,7 @@ GameObject:
   - component: {fileID: 191064817}
   - component: {fileID: 191064820}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: EnemyHealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1770,6 +1770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthbarSprite: {fileID: 1775408251}
+  _reduceSpeed: 2
 --- !u!1 &209461675
 GameObject:
   m_ObjectHideFlags: 0
@@ -12793,7 +12794,7 @@ GameObject:
   - component: {fileID: 1527891636}
   - component: {fileID: 1527891635}
   m_Layer: 0
-  m_Name: Image
+  m_Name: BackGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14432,7 +14433,7 @@ GameObject:
   - component: {fileID: 1775408252}
   - component: {fileID: 1775408251}
   m_Layer: 0
-  m_Name: Image (1)
+  m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17266,8 +17267,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentHealth: 100
   _maxHealth: 100
+  animator: {fileID: 2009487249}
   target: {fileID: 0}
   _healthbar: {fileID: 191064820}
+--- !u!95 &2009487249 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: d6f77038cd2fa9a4dbf3ec5e658f6277,
+    type: 3}
+  m_PrefabInstance: {fileID: 976409746}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2012760234
 PrefabInstance:
   m_ObjectHideFlags: 0

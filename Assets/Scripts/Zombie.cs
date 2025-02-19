@@ -6,6 +6,7 @@ public class Zombie : MonoBehaviour
 {
     public float _currentHealth;
     [SerializeField] private float _maxHealth = 100;
+    [SerializeField] private Animator animator;
     public GameObject target;
 
     [SerializeField] private HealthBar _healthbar;
@@ -30,9 +31,9 @@ public class Zombie : MonoBehaviour
     {
         if (_currentHealth <= 0)
         {
+            EnableRagdoll();
             _currentHealth = 0;
             _healthbar.gameObject.SetActive(false);
-            RagDollBehaviour();
         }
         else
         {
@@ -56,6 +57,8 @@ public class Zombie : MonoBehaviour
 
     private void EnableRagdoll()
     {
+        animator.enabled = false;
+
         foreach (var rigidbody in _ragdollRigidBodies)
         {
             rigidbody.isKinematic = false;
@@ -70,10 +73,5 @@ public class Zombie : MonoBehaviour
     private void AttackingBehaviour()
     {
         
-    }
-
-    private void RagDollBehaviour()
-    {
-        EnableRagdoll();
     }
 }
