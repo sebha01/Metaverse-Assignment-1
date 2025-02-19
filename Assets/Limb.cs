@@ -13,7 +13,7 @@ public class Limb : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Weapon"))
         {
-
+            Hit();
         }
     }
 }

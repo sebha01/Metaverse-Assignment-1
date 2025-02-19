@@ -4,7 +4,16 @@ using UnityEngine;
 
 public class Zombie : MonoBehaviour
 {
+    private enum ZombieState
+    {
+        Tpose,
+        Walking,
+        Attacking,
+        Ragdoll
+    }
+
     private Rigidbody[] _ragdollRigidBodies;
+    private ZombieState _currentState = ZombieState.Walking;
 
     // Start is called before the first frame update
     void Awake()
@@ -16,9 +25,20 @@ public class Zombie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        switch (_currentState)
         {
-            EnableRagdoll();
+            case ZombieState.Walking:
+                WalkingBehaviour();
+                break;
+            case ZombieState.Tpose:
+                TPoseBehaviour();
+                break;
+            case ZombieState.Attacking:
+                AttackingBehaviour();
+                break;
+            case ZombieState.Ragdoll:
+                RagDollBehaviour();
+                break;
         }
     }
 
@@ -36,5 +56,29 @@ public class Zombie : MonoBehaviour
         {
             rigidbody.isKinematic = false;
         }
+    }
+
+    private void TPoseBehaviour()
+    {
+        
+    }
+
+    private void WalkingBehaviour()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            EnableRagdoll();
+            _currentState = ZombieState.Ragdoll;
+        }
+    }
+
+    private void AttackingBehaviour()
+    {
+
+    }
+
+    private void RagDollBehaviour()
+    {
+
     }
 }
