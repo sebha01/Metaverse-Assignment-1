@@ -37,18 +37,20 @@ public class Zombie : MonoBehaviour
         }
         else
         {
+            _healthbar.UpdateHealthBar(_maxHealth, _currentHealth);
+
             //Code for distance to player
             //if far from player
             //Walk Behaviour
             //eles if close
             //attack Behaviour
-
-            _healthbar.UpdateHealthBar(_maxHealth, _currentHealth);
         }
     }
 
     private void DisableRagdoll()
     {
+        animator.enabled = true;
+
         foreach (var rigidbody in _ragdollRigidBodies)
         {
             rigidbody.isKinematic = true;
