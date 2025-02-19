@@ -31,6 +31,7 @@ public class Zombie : MonoBehaviour
         if (_currentHealth <= 0)
         {
             _currentHealth = 0;
+            _healthbar.gameObject.SetActive(false);
             RagDollBehaviour();
         }
         else
