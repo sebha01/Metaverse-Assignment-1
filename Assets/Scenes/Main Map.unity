@@ -5564,14 +5564,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706189739}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98e7e702c68f3d045989bf8826f7b7a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTime: 5
   spawnZombie: {fileID: 2009487248}
-  spawnPoints: []
+  numberOfZombies: 0
   player: {fileID: 1826147906}
 --- !u!4 &706189741
 Transform:
@@ -17427,6 +17427,7 @@ MonoBehaviour:
   animator: {fileID: 2009487249}
   playerManager: {fileID: 1826147906}
   _healthbar: {fileID: 191064820}
+  spawner: {fileID: 706189740}
   source: {fileID: 2009487252}
   zombieNoise: {fileID: 8300000, guid: dff47e4cf2d9e5b4fab000bb103134ca, type: 3}
   zombieDeath: {fileID: 8300000, guid: 009799049e0a18e48a5c045aa5a1411e, type: 3}

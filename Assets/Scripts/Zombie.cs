@@ -13,6 +13,9 @@ public class Zombie : MonoBehaviour
     [SerializeField] private HealthBar _healthbar;
 
     private float timer = 0;
+    private bool timerStarted = false;
+    private float deathTimer = 5;
+    public Spawner spawner;
 
     private Rigidbody[] _ragdollRigidBodies;
 
@@ -43,8 +46,7 @@ public class Zombie : MonoBehaviour
             _currentHealth = 0;
             _healthbar.gameObject.SetActive(false);
             playerManager.ZombiesKilled += 1;
-            Destroy(this);
-
+            timerStarted = true;
         }
         else
         {
@@ -59,6 +61,17 @@ public class Zombie : MonoBehaviour
             {
                 timer -= Time.deltaTime;
             }
+        }
+
+        if (timerStarted)
+        {
+            if (deathTimer <= 0)
+            {
+                Destroy(gameObject);
+                timerStarted = false;
+            }
+
+            deathTimer -= Time.deltaTime;
         }
     }
 
@@ -80,5 +93,10 @@ public class Zombie : MonoBehaviour
         {
             rigidbody.isKinematic = false;
         }
+    }
+
+    private void OnDestroy()
+    {
+        spawner.numberOfZombies--;
     }
 }

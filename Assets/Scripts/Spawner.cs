@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public float spawnTime = 1;
+    public float spawnTime = 5;
     public Zombie spawnZombie;
     public int numberOfZombies;
-    private float timer;
+    private float timer = 0;
     public PlayerManager player;
 
-    public float xPos;
-    public float zPos;
+    private float xPos;
+    private float zPos;
+    float minRadius = 5f;
+    float maxRadius = 15f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        timer = 0;
     }
 
     // Update is called once per frame
@@ -26,18 +28,17 @@ public class Spawner : MonoBehaviour
         {
             if (timer > spawnTime)
             {
-                float minRadius = 5f; 
-                float maxRadius = 15f; 
 
-                float angle = UnityEngine.Random.Range(0f, Mathf.PI * 2);
+                float angle = Random.Range(0f, Mathf.PI * 2);
 
-                float distance = UnityEngine.Random.Range(minRadius, maxRadius);
+                float distance = Random.Range(minRadius, maxRadius);
 
                 float xPos = player.transform.position.x + Mathf.Cos(angle) * distance;
                 float zPos = player.transform.position.z + Mathf.Sin(angle) * distance;
 
                 Instantiate(spawnZombie, new Vector3(xPos, 0, zPos) , Quaternion.identity);
                 timer = 0;
+                numberOfZombies++;
             }
 
             timer += Time.deltaTime;
