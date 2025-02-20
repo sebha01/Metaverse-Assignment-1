@@ -1083,7 +1083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_GroupName: Left
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1015097218}
   m_StartingGroupMembers:
   - {fileID: 897618093}
   - {fileID: 1498115858}
@@ -4614,7 +4614,6 @@ GameObject:
   - component: {fileID: 1309991380}
   - component: {fileID: 1309991379}
   - component: {fileID: 1309991378}
-  - component: {fileID: 1309991377}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -4622,21 +4621,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1309991377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309991376}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af6bf904e410ee8479f9093d8830d1f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LocomotionProvider: {fileID: 0}
-  m_MinHeight: 0
-  m_MaxHeight: Infinity
 --- !u!143 &1309991378
 CharacterController:
   m_ObjectHideFlags: 0
@@ -6934,18 +6918,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_GroupName: Right
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1015097218}
   m_StartingGroupMembers:
   - {fileID: 1868602035}
-  - {fileID: 0}
   - {fileID: 1221247349}
   m_StartingInteractionOverridesMap:
   - groupMember: {fileID: 1221247349}
     overrideGroupMembers:
     - {fileID: 1868602035}
   - groupMember: {fileID: 1868602035}
-    overrideGroupMembers:
-    - {fileID: 0}
+    overrideGroupMembers: []
 --- !u!135 &2111702023
 SphereCollider:
   m_ObjectHideFlags: 0
