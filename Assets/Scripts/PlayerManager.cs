@@ -8,16 +8,18 @@ public class PlayerManager : MonoBehaviour
     public float maxHealth = 100;
     public float ZombiesKilled = 0;
 
+    [SerializeField] HealthBar healthBar;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        healthBar.UpdateHealthBar(maxHealth, currentHealth);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        healthBar.UpdateHealthBar(maxHealth, currentHealth);
     }
 
     public void decrementHealth(int healthToDecrement)
