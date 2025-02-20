@@ -662,9 +662,10 @@ PrefabInstance:
         Kenny.nl\nZombie models - Kenny.nl\n\n-- Animations --\nZombie Animations
         - mixamo\nHand animations - FistFullOfShrimp\n\n-- Sounds and Music --\n\nHandGun
         shot - DeltaCode\nPistol Reload - XfiXy8\nOut of ammo - Sophia_C\nZombie
-        death - tonsil5\nZombie sound - Under7dude\n\n-- Font --\nDead Font Walking
-        -  Chequered Ink\n\n-- Materials --\nTerrain textures - Free PBR\nSkyBox
-        - rpgwhitelock\n\n-- UI --\nButton - Prinbles"
+        death - tonsil5\nZombie sound - Under7dude\nStart Menu Music - Echoes of
+        Death by Gustavo Alivera\n\n-- Font --\nDead Font Walking -  Chequered Ink\n\n--
+        Materials --\nTerrain textures - Free PBR\nSkyBox - rpgwhitelock\n\n-- UI
+        --\nButton - Prinbles"
       objectReference: {fileID: 0}
     - target: {fileID: 461652064228498000, guid: 0c22d80497f99ce4184481ca2d983a19,
         type: 3}
@@ -2103,6 +2104,79 @@ MonoBehaviour:
   m_UseLocalSpace: 0
   m_AngleStabilization: 20
   m_PositionStabilization: 0.25
+--- !u!1001 &599498801
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 471018556217737229, guid: d895a8867a53c1c4cba125a821952633,
+        type: 3}
+      propertyPath: m_Name
+      value: MusicManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237053346155560253, guid: d895a8867a53c1c4cba125a821952633,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 684ae33d604898e469e0b0a094c05b44, type: 3}
+    - target: {fileID: 7905728701551056616, guid: d895a8867a53c1c4cba125a821952633,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 560.4053
+      objectReference: {fileID: 0}
+    - target: {fileID: 7905728701551056616, guid: d895a8867a53c1c4cba125a821952633,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 129.48032
+      objectReference: {fileID: 0}
+    - target: {fileID: 7905728701551056616, guid: d895a8867a53c1c4cba125a821952633,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.1150913
+      objectReference: {fileID: 0}
+    - target: {fileID: 7905728701551056616, guid: d895a8867a53c1c4cba125a821952633,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7905728701551056616, guid: d895a8867a53c1c4cba125a821952633,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7905728701551056616, guid: d895a8867a53c1c4cba125a821952633,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7905728701551056616, guid: d895a8867a53c1c4cba125a821952633,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7905728701551056616, guid: d895a8867a53c1c4cba125a821952633,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7905728701551056616, guid: d895a8867a53c1c4cba125a821952633,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7905728701551056616, guid: d895a8867a53c1c4cba125a821952633,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d895a8867a53c1c4cba125a821952633, type: 3}
 --- !u!1 &656018489
 GameObject:
   m_ObjectHideFlags: 0
@@ -3111,69 +3185,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &838107452
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 838107453}
-  - component: {fileID: 838107454}
-  m_Layer: 0
-  m_Name: Audio Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &838107453
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 838107452}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &838107454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 838107452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dc44c5eb69748a45b697397b0740ef1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: uiclick
-    clip: {fileID: 8300000, guid: 4885bb3bfe406a44ab63462c4440da59, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: uihoverenter
-    clip: {fileID: 8300000, guid: c6dd68b4c268b8b48bb866311bf7ede6, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: uihoverexit
-    clip: {fileID: 8300000, guid: c00193f69f150124cbf3f5671b986b63, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
 --- !u!1 &846327981
 GameObject:
   m_ObjectHideFlags: 0
@@ -7454,8 +7465,8 @@ SceneRoots:
   - {fileID: 770233794}
   - {fileID: 1212402845}
   - {fileID: 226729186}
-  - {fileID: 838107453}
   - {fileID: 19669739}
   - {fileID: 1309991381}
   - {fileID: 69523329}
   - {fileID: 698391262}
+  - {fileID: 599498801}
