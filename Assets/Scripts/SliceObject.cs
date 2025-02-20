@@ -17,7 +17,7 @@ public class SliceObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        sliceableLayer = 6;
     }
 
     // Update is called once per frame
