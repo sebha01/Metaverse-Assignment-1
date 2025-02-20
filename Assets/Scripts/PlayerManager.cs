@@ -20,6 +20,11 @@ public class PlayerManager : MonoBehaviour
     void Update()
     {
         healthBar.UpdateHealthBar(maxHealth, currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            SceneTransitionManager.singleton.GoToSceneAsync(2);
+        }
     }
 
     public void decrementHealth(int healthToDecrement)

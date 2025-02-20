@@ -20,7 +20,7 @@ public class DeathMenu : MonoBehaviour
         EnableMainMenu();
 
         //Hook events
-        startButton.onClick.AddListener(StartGame);
+        backToMenuButton.onClick.AddListener(BackToMenu);
         quitButton.onClick.AddListener(QuitGame);
 
         foreach (var item in returnButtons)
@@ -34,10 +34,10 @@ public class DeathMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void StartGame()
+    public void BackToMenu()
     {
         HideAll();
-        SceneTransitionManager.singleton.GoToSceneAsync(1);
+        SceneTransitionManager.singleton.GoToSceneAsync(0);
     }
 
     public void HideAll()
