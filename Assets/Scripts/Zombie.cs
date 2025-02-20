@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Zombie : MonoBehaviour
@@ -10,6 +11,8 @@ public class Zombie : MonoBehaviour
     public PlayerManager playerManager;
 
     [SerializeField] private HealthBar _healthbar;
+
+    private float timer = 0;
 
     private Rigidbody[] _ragdollRigidBodies;
 
@@ -46,6 +49,16 @@ public class Zombie : MonoBehaviour
         else
         {
             _healthbar.UpdateHealthBar(_maxHealth, _currentHealth);
+
+            if (timer <= 0)
+            {
+                source.PlayOneShot(zombieNoise);
+                timer = Random.Range(40, 100) / 10;
+            }
+            else
+            {
+                timer -= Time.deltaTime;
+            }
         }
     }
 
