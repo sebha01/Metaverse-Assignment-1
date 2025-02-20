@@ -39,11 +39,17 @@ public class Limb : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        GetHit();
+        if (collision.tag == "Weapon")
+        {
+            GetHit();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        GetHit();
+        if (collision.gameObject.tag == "Weapon")
+        {
+            GetHit();
+        }
     }
 }
