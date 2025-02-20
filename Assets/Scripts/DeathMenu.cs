@@ -17,6 +17,8 @@ public class DeathMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        mainMenu = GetComponent<GameObject>();
+
         EnableMainMenu();
 
         //Hook events
