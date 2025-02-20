@@ -5566,8 +5566,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTime: 5
-  spawnGameObject: {fileID: 2009487240}
+  spawnZombie: {fileID: 2009487248}
   spawnPoints: []
+  player: {fileID: 1826147906}
 --- !u!4 &706189741
 Transform:
   m_ObjectHideFlags: 0
@@ -15251,6 +15252,7 @@ GameObject:
   - component: {fileID: 1826147904}
   - component: {fileID: 1826147903}
   - component: {fileID: 1826147902}
+  - component: {fileID: 1826147906}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -15360,6 +15362,21 @@ MonoBehaviour:
   m_CameraFloorOffsetObject: {fileID: 297629605}
   m_RequestedTrackingOriginMode: 0
   m_CameraYOffset: 1.1176
+--- !u!114 &1826147906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826147900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753800c2eb95ee64880d8b9c9211c54d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
+  maxHealth: 100
+  ZombiesKilled: 0
 --- !u!1001 &1851313066
 PrefabInstance:
   m_ObjectHideFlags: 0
