@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public float spawnTime = 5;
-    public Zombie spawnZombie;
+    public GameObject spawnZombie;
     public int numberOfZombies;
     private float timer = 0;
     public PlayerManager player;
@@ -19,7 +19,6 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         timer = 0;
-        spawnZombie = new Zombie();
     }
 
     // Update is called once per frame

@@ -34,6 +34,8 @@ public class Zombie : MonoBehaviour
     {
         _currentHealth = _maxHealth;
         _healthbar.UpdateHealthBar(_maxHealth, _currentHealth);
+        spawner = FindAnyObjectByType<Spawner>();
+        playerManager = FindObjectOfType<PlayerManager>();
     }
 
     // Update is called once per frame

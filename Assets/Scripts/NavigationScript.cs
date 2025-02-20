@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
@@ -23,6 +24,13 @@ public class NavigationScript : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         zombie = GetComponent<Zombie>();
+
+        XROrigin xrOrigin = FindObjectOfType<XROrigin>();
+
+        if (xrOrigin != null)
+        {
+            player = xrOrigin.transform;
+        }
     }
 
     // Update is called once per frame
