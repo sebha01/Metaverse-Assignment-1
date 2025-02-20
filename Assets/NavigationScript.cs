@@ -41,4 +41,12 @@ public class NavigationScript : MonoBehaviour
         agent.height = 0.5f;
         agent.baseOffset = 0;
     }
+
+    private void OnAnimatorMove()
+    {
+        if (animator.GetBool("CanAttack") == false)
+        {
+            agent.speed = (animator.deltaPosition / Time.deltaTime).magnitude;
+        }
+    }
 }
