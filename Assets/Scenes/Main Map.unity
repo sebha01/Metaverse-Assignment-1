@@ -4954,7 +4954,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childLimbs: []
-  limbPrefab: {fileID: 0}
+  limbPrefab: {fileID: 7040985128939289368, guid: 0929dcb2fd51f9e419d266f305507750,
+    type: 3}
   zombie: {fileID: 2009487248}
 --- !u!1 &615940050
 GameObject:
@@ -5504,7 +5505,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childLimbs:
   - {fileID: 614875869}
-  limbPrefab: {fileID: 0}
+  limbPrefab: {fileID: 6168808309774931523, guid: 09433c65888c76546bd469588152a15b,
+    type: 3}
   zombie: {fileID: 2009487248}
 --- !u!1 &692723925
 GameObject:
@@ -9239,7 +9241,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childLimbs:
   - {fileID: 1281635889}
-  limbPrefab: {fileID: 0}
+  limbPrefab: {fileID: 5187785869273290047, guid: 6633146ab7b3b914eb6ff17e5477cf06,
+    type: 3}
   zombie: {fileID: 2009487248}
 --- !u!1001 &1112244369
 PrefabInstance:
@@ -10032,7 +10035,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childLimbs:
   - {fileID: 1408996177}
-  limbPrefab: {fileID: 0}
+  limbPrefab: {fileID: 8977344446879341414, guid: 5906aa586011fbc4b8c94d5ab560927a,
+    type: 3}
   zombie: {fileID: 2009487248}
 --- !u!1001 &1189385912
 PrefabInstance:
@@ -10778,7 +10782,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childLimbs: []
-  limbPrefab: {fileID: 0}
+  limbPrefab: {fileID: 4426483609985283614, guid: e4ed554aaf76d90479820479d07d90a4,
+    type: 3}
   zombie: {fileID: 2009487248}
 --- !u!1001 &1295565920
 PrefabInstance:
@@ -11971,7 +11976,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childLimbs: []
-  limbPrefab: {fileID: 0}
+  limbPrefab: {fileID: 7249116852539696695, guid: cba44535b43dc2643a5b5b6617d53da6,
+    type: 3}
   zombie: {fileID: 2009487248}
 --- !u!1 &1420250780
 GameObject:
@@ -12527,7 +12533,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childLimbs: []
-  limbPrefab: {fileID: 0}
+  limbPrefab: {fileID: 4464852028029890714, guid: e2c365ea7de4d324f909833169aee380,
+    type: 3}
   zombie: {fileID: 2009487248}
 --- !u!1 &1482787286 stripped
 GameObject:
@@ -12645,7 +12652,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childLimbs:
   - {fileID: 1467389070}
-  limbPrefab: {fileID: 0}
+  limbPrefab: {fileID: 8165641467973778181, guid: ebf2cab856afc6240b4fe036b32eb388,
+    type: 3}
   zombie: {fileID: 2009487248}
 --- !u!1 &1486389466
 GameObject:
@@ -16483,7 +16491,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   childLimbs: []
-  limbPrefab: {fileID: 0}
+  limbPrefab: {fileID: 3673717589792099056, guid: 3955eb0d1d7879044be0f8e3d6b28868,
+    type: 3}
   zombie: {fileID: 2009487248}
 --- !u!1 &1972205979
 GameObject:
