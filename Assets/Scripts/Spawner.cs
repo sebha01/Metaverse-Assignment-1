@@ -5,9 +5,10 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public float spawnTime = 1;
-    public GameObject spawnGameObject;
+    public Zombie spawnZombie;
     public Transform[] spawnPoints;
     private float timer;
+    public PlayerManager player;
 
     // Start is called before the first frame update
     void Start()
@@ -18,13 +19,16 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timer > spawnTime)
+        while (player.currentHealth > 0)
         {
-            Transform randomPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-            Instantiate(spawnGameObject, randomPoint.position, randomPoint.rotation);
-            timer = 0;
-        }
+            if (timer > spawnTime)
+            {
+                Transform randomPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+                Instantiate(spawnZombie, randomPoint.position, randomPoint.rotation);
+                timer = 0;
+            }
 
-        timer += Time.deltaTime;
+            timer += Time.deltaTime;
+        }
     }
 }
