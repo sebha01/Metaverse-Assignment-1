@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
+using static Unity.VisualScripting.Member;
 
 public class NavigationScript : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class NavigationScript : MonoBehaviour
     private Animator animator;
     private float distanceToTarget;
     private Zombie zombie;
+
+    private float timer = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +36,15 @@ public class NavigationScript : MonoBehaviour
             {
                 agent.isStopped = true;
                 animator.SetBool("CanAttack", true);
+
+                if (timer <= 0)
+                {
+                    zombie.source.PlayOneShot(zombie.zombieNoise);
+                    timer = Random.Range(40, 100) / 10;
+                }
+                
+                timer -= Time.deltaTime;
+                
             }
             else
             {

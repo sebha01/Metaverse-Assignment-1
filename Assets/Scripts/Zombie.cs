@@ -12,11 +12,11 @@ public class Zombie : MonoBehaviour
 
     [SerializeField] private HealthBar _healthbar;
 
-    private float timer = 0;
-    private bool timerStarted = false;
     private float deathTimer = 5;
+    private bool timerStarted = false;
+    private bool deathSoundPlayed = false;
+ 
     public Spawner spawner;
-
     private Rigidbody[] _ragdollRigidBodies;
 
     public AudioSource source;
@@ -42,7 +42,13 @@ public class Zombie : MonoBehaviour
         if (_currentHealth <= 0)
         {
             EnableRagdoll();
-            source.PlayOneShot(zombieDeath);
+
+            if (!deathSoundPlayed)
+            {
+                source.PlayOneShot(zombieDeath);
+                deathSoundPlayed = true;
+            }
+
             _currentHealth = 0;
             _healthbar.gameObject.SetActive(false);
             playerManager.ZombiesKilled += 1;
@@ -51,16 +57,6 @@ public class Zombie : MonoBehaviour
         else
         {
             _healthbar.UpdateHealthBar(_maxHealth, _currentHealth);
-
-            if (timer <= 0)
-            {
-                source.PlayOneShot(zombieNoise);
-                timer = Random.Range(40, 100) / 10;
-            }
-            else
-            {
-                timer -= Time.deltaTime;
-            }
         }
 
         if (timerStarted)
