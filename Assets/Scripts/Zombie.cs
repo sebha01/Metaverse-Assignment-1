@@ -13,6 +13,10 @@ public class Zombie : MonoBehaviour
 
     private Rigidbody[] _ragdollRigidBodies;
 
+    public AudioSource source;
+    public AudioClip zombieNoise;
+    public AudioClip zombieDeath;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -32,6 +36,7 @@ public class Zombie : MonoBehaviour
         if (_currentHealth <= 0)
         {
             EnableRagdoll();
+            source.PlayOneShot(zombieDeath);
             _currentHealth = 0;
             _healthbar.gameObject.SetActive(false);
             playerManager.ZombiesKilled += 1;
