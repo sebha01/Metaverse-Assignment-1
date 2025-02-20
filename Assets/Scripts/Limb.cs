@@ -5,6 +5,7 @@ using UnityEngine;
 public class Limb : MonoBehaviour
 {
     [SerializeField] Limb[] childLimbs;
+    [SerializeField] GameObject limbPrefab;
     public Zombie zombie;
 
     private void Start()
@@ -28,6 +29,11 @@ public class Limb : MonoBehaviour
                     Destroy(this);
                 }
             }
+        }
+
+        if (limbPrefab != null)
+        {
+            Instantiate(limbPrefab, transform.position, transform.rotation);
         }
 
         transform.localScale = Vector3.zero;
