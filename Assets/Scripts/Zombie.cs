@@ -7,6 +7,7 @@ public class Zombie : MonoBehaviour
     public float _currentHealth;
     [SerializeField] private float _maxHealth = 100;
     [SerializeField] private Animator animator;
+    public PlayerManager playerManager;
 
     [SerializeField] private HealthBar _healthbar;
 
@@ -33,6 +34,9 @@ public class Zombie : MonoBehaviour
             EnableRagdoll();
             _currentHealth = 0;
             _healthbar.gameObject.SetActive(false);
+            playerManager.ZombiesKilled += 1;
+            Destroy(this);
+
         }
         else
         {

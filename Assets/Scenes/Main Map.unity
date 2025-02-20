@@ -17421,6 +17421,7 @@ MonoBehaviour:
   _currentHealth: 100
   _maxHealth: 100
   animator: {fileID: 2009487249}
+  playerManager: {fileID: 1826147906}
   _healthbar: {fileID: 191064820}
 --- !u!95 &2009487249 stripped
 Animator:
