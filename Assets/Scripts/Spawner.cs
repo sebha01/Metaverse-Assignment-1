@@ -19,6 +19,7 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         timer = 0;
+        spawnZombie = new Zombie();
     }
 
     // Update is called once per frame
