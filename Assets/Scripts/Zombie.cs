@@ -7,7 +7,7 @@ public class Zombie : MonoBehaviour
 {
     public float _currentHealth;
     [SerializeField] private float _maxHealth = 100;
-    [SerializeField] private Animator animator;
+    [SerializeField] public Animator animator;
     public PlayerManager playerManager;
 
     [SerializeField] private HealthBar _healthbar;

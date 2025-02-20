@@ -5218,7 +5218,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706189739}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98e7e702c68f3d045989bf8826f7b7a5, type: 3}
   m_Name: 
@@ -13874,6 +13874,7 @@ GameObject:
   - component: {fileID: 1826147903}
   - component: {fileID: 1826147902}
   - component: {fileID: 1826147906}
+  - component: {fileID: 1826147907}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -13999,6 +14000,29 @@ MonoBehaviour:
   maxHealth: 100
   ZombiesKilled: 0
   healthBar: {fileID: 712742819}
+--- !u!136 &1826147907
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826147900}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.35
+  m_Height: 2.02
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.01, z: 0}
 --- !u!1001 &1851313066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16594,6 +16618,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1826147901}
+    - target: {fileID: 5944047090489325574, guid: 1cbbcb65cf7168c49b38aa0f45b4db59,
+        type: 3}
+      propertyPath: playerManager
+      value: 
+      objectReference: {fileID: 1826147906}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

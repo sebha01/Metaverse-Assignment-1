@@ -45,7 +45,7 @@ public class Limb : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.CompareTag("Weapon"))
+        if (collision.gameObject.tag == ("Weapon"))
         {
             GetHit();
         }
@@ -53,7 +53,7 @@ public class Limb : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Weapon"))
+        if (collision.gameObject.tag == ("Weapon"))
         {
             GetHit();
         }

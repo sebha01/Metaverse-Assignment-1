@@ -27,11 +27,17 @@ public class PlayerManager : MonoBehaviour
         currentHealth -= healthToDecrement;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        Limb limb = other.GetComponent<Limb>();
+        Zombie zombie = other.GetComponentInParent<Zombie>();
+
+        if (limb != null)
         {
-            decrementHealth(10);
+            if (zombie.animator.GetBool("CanAttack") == true)
+            {
+                decrementHealth(1);
+            }
         }
     }
 }
