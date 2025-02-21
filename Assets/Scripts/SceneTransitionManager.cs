@@ -14,6 +14,8 @@ public class SceneTransitionManager : MonoBehaviour
             Destroy(singleton);
 
         singleton = this;
+
+        fadeScreen = GameObject.Find("Fader Screen").GetComponent<FadeScreen>();
     }
 
     public void GoToScene(int sceneIndex)

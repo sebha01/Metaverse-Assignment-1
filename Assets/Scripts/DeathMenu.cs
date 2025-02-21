@@ -17,7 +17,9 @@ public class DeathMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mainMenu = GetComponent<GameObject>();
+        mainMenu = GameObject.Find("Menu");
+        backToMenuButton = GameObject.Find("BackToMenu").GetComponent<Button>();
+        quitButton = GameObject.Find("Quit").GetComponent<Button>();
 
         EnableMainMenu();
 
